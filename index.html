@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>عنوان سایت</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="d-flex">
+    <main id="main-page">
+        <div class="d-flex flex-column flex-shrink-0 text-white" id="sidebar">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none m-3">
+                <i class="fab fa-2x fa-wordpress me-2"></i>
+                <span class="fs-4 fw-bold">وردپرس</span>
+            </a>
+            <hr>
+            <div class="custom-scrollable">
+                <ul class="nav nav-pills flex-column mb-auto" id="sidebar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link d-flex align-items-center active" aria-current="page">
+                            <i class="fad fa-home me-3 nav-item-icon"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-tachometer-slowest me-3 nav-item-icon"></i>
+                            <span>داشبورد</span>
+                        </a>
+                    </li>
+                    <li class="menu-section">
+                        <h5>بلاگ</h5>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex align-items-center collapsed collapse-btn" data-bs-toggle="collapse" href="#posts-collapse">
+                            <i class="fad fa-clone me-3 nav-item-icon"></i>
+                            <span>نوشته ها</span>
+                            <i class="fas fa-xs fa-chevron-left ms-auto"></i>
+                        </a>
+                        <ul class="sidebar-sub-nav collapse" id="posts-collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fad fa-list me-2 nav-item-icon"></i>
+                                    <span>لیست</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fa fa-plus me-2 nav-item-icon"></i>
+                                    <span>اضافه</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex align-items-center collapsed collapse-btn" data-bs-toggle="collapse" href="#authors-collapse">
+                            <i class="fad fa-user-edit me-3 nav-item-icon"></i>
+                            <span>نویسنده ها</span>
+                            <i class="fas fa-xs fa-chevron-left ms-auto"></i>
+                        </a>
+                        <ul class="sidebar-sub-nav collapse" id="authors-collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fad fa-list me-2 nav-item-icon"></i>
+                                    <span>لیست</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fa fa-plus me-2 nav-item-icon"></i>
+                                    <span>اضافه</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex align-items-center collapsed collapse-btn" data-bs-toggle="collapse" href="#categories-collapse">
+                            <i class="fad fa-sitemap me-3 nav-item-icon"></i>
+                            <span>دسته بندی ها</span>
+                            <i class="fas fa-xs fa-chevron-left ms-auto"></i>
+                        </a>
+                        <ul class="sidebar-sub-nav collapse" id="categories-collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fad fa-list me-2 nav-item-icon"></i>
+                                    <span>لیست</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fa fa-plus me-2 nav-item-icon"></i>
+                                    <span>اضافه</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex align-items-center collapsed collapse-btn" data-bs-toggle="collapse" href="#tags-collapse">
+                            <i class="fad fa-tags me-3 nav-item-icon"></i>
+                            <span>تگ ها</span>
+                            <i class="fas fa-xs fa-chevron-left ms-auto"></i>
+                        </a>
+                        <ul class="sidebar-sub-nav collapse" id="tags-collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fad fa-list me-2 nav-item-icon"></i>
+                                    <span>لیست</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fa fa-plus me-2 nav-item-icon"></i>
+                                    <span>اضافه</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-comments me-3 nav-item-icon"></i>
+                            <span>نظرات</span>
+                            <span class="sidebar-badge sidebar-blue-badge ms-auto">6</span>
+                        </a>
+                    </li>
+                    <li class="menu-section">
+                        <h5>فروشگاه</h5>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex align-items-center collapsed collapse-btn" data-bs-toggle="collapse" href="#orders-collapse">
+                            <i class="fad fa-shopping-cart me-3 nav-item-icon"></i>
+                            <span>سفارشات</span>
+                            <i class="fas fa-xs fa-chevron-left ms-auto"></i>
+                        </a>
+                        <ul class="sidebar-sub-nav collapse" id="orders-collapse" data-bs-parent="#sidebar-nav">
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fad fa-list me-2 nav-item-icon"></i>
+                                    <span>لیست</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link d-flex align-items-center">
+                                    <i class="fa fa-plus me-2 nav-item-icon"></i>
+                                    <span>اضافه</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-box-full me-3 nav-item-icon"></i>
+                            <span>محصولات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-users me-3 nav-item-icon"></i>
+                            <span>مشتریان</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-percentage me-3 nav-item-icon"></i>
+                            <span>تخفیف ها</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-shipping-fast me-3 nav-item-icon"></i>
+                            <span>مرسولات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-comments me-3 nav-item-icon"></i>
+                            <span>دیدگاه ها</span>
+                        </a>
+                    </li>
+                    <li class="menu-section">
+                        <h5>تنظیمات</h5>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-cogs me-3 nav-item-icon"></i>
+                            <span>تنظیمات کلی</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-share-square me-3 nav-item-icon"></i>
+                            <span>شبکه های اجتماعی</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-bell me-3 nav-item-icon"></i>
+                            <span>اطلاعیه ها</span>
+                            <span class="sidebar-badge sidebar-red-badge ms-auto">New</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fad fa-poll me-3 nav-item-icon"></i>
+                            <span>آمار و اطلاعات</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="mt-auto mb-0">
+            <a href="#" class="d-flex align-items-center text-decoration-none text-danger pt-3 pb-3">
+                <i class="fad fa-sign-out me-3 ms-3"></i>
+                <span style="font-size: 14px">خروج</span>
+            </a>
+        </div>
+    </main>
+    <div class="flex-grow-1" style="background: #EEF0F8;height: 100vh; overflow: scroll;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid ps-4 pe-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav" id="top-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">صفحات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">امکانات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">برنامه ها</a>
+                        </li>
+                    </ul>
+                    <div class="flex-shrink-0 dropdown ms-auto">
+                        <a href="#" class="d-flex align-items-center link-dark text-decoration-none" id="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="welcome-text" class="me-2">سلام، <span>آرمان</span></span>
+                            <span id="user-avatar-substitute">A</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end border-0" aria-labelledby="user-dropdown" id="user-dropdown-menu">
+                            <li class="user-menu-item">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <i class="fad fa-user-edit color-green"></i>
+                                    <div class="d-flex flex-column user-menu-item-text">
+                                        <span>پروفایل من</span>
+                                        <span>تنظیمات اکانت و غیره</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="user-menu-item">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <i class="fad fa-cogs color-red"></i>
+                                    <div class="d-flex flex-column user-menu-item-text">
+                                        <span>پیام های من</span>
+                                        <span>صندوق پیام ها و وظایف</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="user-menu-item">
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <i class="fad fa-calendar-alt color-blue"></i>
+                                    <div class="d-flex flex-column user-menu-item-text">
+                                        <span>فعالیت های من</span>
+                                        <span>لاگ ها و اطلاعیه ها</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid p-4 rounded-2">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card border-0 bg-white rounded-2">
+                        <h5 class="card-header bg-white">دکمه ها</h5>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-style-1 no-duration btn-light-success mr-2">موفقیت</a>
+                            <a href="#" class="btn btn-style-1 no-duration btn-light-primary mr-2">اصلی</a>
+                            <a href="#" class="btn btn-style-1 no-duration btn-light-danger mr-2">خطر</a>
+                            <a href="#" class="btn btn-style-1 no-duration btn-light-warning mr-2">هشدار</a>
+                            <a href="#" class="btn btn-style-1 no-duration btn-light-dark">سیاد</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-white rounded-2 mt-2">
+                        <h5 class="card-header bg-white">برچسب ها</h5>
+                        <div class="card-body">
+                            <span class="label-style-1 label-light-danger">خطر</span>
+                            <span class="label-style-1 label-light-primary">اصلی</span>
+                            <span class="label-style-1 label-light-success">موفقیت</span>
+                            <span class="label-style-1 label-light-info">اطلاعات</span>
+                            <span class="label-style-1 label-light-warning">هشدار</span>
+                            <span class="label-style-1 label-light-dark">سیاد</span>
+
+                            <hr>
+
+                            <span class="label-style-1 label-light-danger label-bold">خطر</span>
+                            <span class="label-style-1 label-light-primary label-bold">اصلی</span>
+                            <span class="label-style-1 label-light-success label-bold">موفقیت</span>
+                            <span class="label-style-1 label-light-info label-bold">اطلاعات</span>
+                            <span class="label-style-1 label-light-warning label-bold">هشدار</span>
+                            <span class="label-style-1 label-light-dark label-bold">سیاد</span>
+                        </div>
+                    </div>
+                    <div class="card border-0 bg-white rounded-2 mt-2">
+                        <h5 class="card-header bg-white">آکاردئون ها</h5>
+                        <div class="card-body p-4">
+                            <div class="accordion custom-accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="fal fa-layer-group"></i><span>دسترسی های کاربر</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            اول
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fal fa-bell"></i><span>اطلاعیه ها</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            دوم
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fal fa-key"></i><span>امتیاز ها</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            سوم
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 bg-white p-0 tab-container">
+                    <nav>
+                        <div class="nav nav-tabs" role="tablist">
+                            <button class="nav-link d-flex align-items-center active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fad fa-envelope me-1"></i>ایمیل ها</button>
+                            <button class="nav-link d-flex align-items-center" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fad fa-bell me-1"></i>اطلاعیه ها</button>
+                            <button class="nav-link d-flex align-items-center" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fad fa-users me-1"></i>مخاطبین</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">ایمیل ها</div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">اطلاعیه ها</div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">مخاطبین</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <div class="card border-0 bg-white rounded-2">
+                        <h5 class="card-header bg-white">فرم</h5>
+                        <div class="card-body">
+                            <form class="custom-form me-5 ms-5 mt-2">
+                                <div class="floating-label-container mb-3">
+                                    <input type="text" name="email" autocomplete="off" placeholder=" ">
+                                    <label>ایمیل</label>
+                                </div>
+                                <div class="floating-label-container mb-4">
+                                    <input type="password" name="password" autocomplete="off" placeholder=" ">
+                                    <label>پسورد</label>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <span class="me-3">می خواهم ثبت نام کنم</span>
+                                    <input type="checkbox" class="ios-button">
+                                </div>
+                                <button class="btn btn-style-1 no-duration btn-light-primary mr-2">ارسال</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="card border-0 bg-white rounded-2">
+                        <h5 class="card-header bg-white">جدول داده ها</h5>
+                        <div class="card-body">
+                            <table class="table custom-table">
+                                <thead>
+                                <tr>
+                                    <th>شناسه سفارش</th>
+                                    <th>کشور</th>
+                                    <th>آدرس ارسال</th>
+                                    <th>زمان ارسال</th>
+                                    <th>وضعیت</th>
+                                    <th>نوع</th>
+                                    <th>عملیات ها</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>64616-103</td>
+                                    <td>ایران</td>
+                                    <td>کرج - مهرشهر - فاز 1</td>
+                                    <td>15 اسفند 1400</td>
+                                    <td>
+                                        <span class="label-style-1 label-light-info label-bold">در حال پردازش</span>
+                                    </td>
+                                    <td>آنلاین</td>
+                                    <td>
+                                        <div class="cell-actions">
+                                            <i class="fad fa-cog"></i>
+                                            <i class="fad fa-edit"></i>
+                                            <i class="fad fa-trash-alt"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

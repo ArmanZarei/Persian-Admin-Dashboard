@@ -1,0 +1,475 @@
+@import 'assets/css/fontiran.css';
+
+body {
+    min-height: 100vh;
+    font-family: IRANSans, "Poppins", var(--bs-font-sans-serif);
+}
+main#main-page {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+#sidebar {
+    width: 280px;
+    background: #1E1E2D;
+}
+.custom-scrollable {
+    overflow-y: scroll;
+}
+.custom-scrollable::-webkit-scrollbar {
+    width: 13px;
+}
+.custom-scrollable::-webkit-scrollbar-thumb {
+    border: 5px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    background-color: transparent;
+}
+#sidebar:hover .custom-scrollable::-webkit-scrollbar-thumb {
+    background-color: #637099;
+}
+.custom-scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: #7987b1 !important;
+}
+#sidebar-nav span {
+    font-size: 13px;
+}
+#sidebar-nav a > i:first-of-type {
+    width: 1.1rem;
+    text-align: center;
+}
+#sidebar-nav a {
+    padding: 11px 16px;
+}
+#sidebar-nav .nav-link i {
+    color: #494b74;
+}
+#sidebar-nav .nav-link {
+    color: #a2a3b7;
+    transition: none;
+    border-radius: 0;
+}
+#sidebar-nav .nav-link.active,
+#sidebar-nav .nav-link.collapse-btn:not(.collapsed) {
+    background: #1b1b28;
+    color: #ffffff;
+}
+#sidebar-nav .nav-link.active .fa-chevron-left,
+#sidebar-nav .nav-link.collapse-btn:not(.collapsed) .fa-chevron-left {
+    color: #ffffff;
+}
+#sidebar-nav .nav-link:hover .fa-chevron-left {
+    background: #1b1b28;
+    color: #ffffff;
+}
+#sidebar-nav .nav-link.active .nav-item-icon,
+#sidebar-nav .nav-link.collapse-btn:not(.collapsed) .nav-item-icon{
+    color: #3699FF;
+}
+#sidebar-nav .nav-link:hover {
+    background: #1b1b28;
+    color: #ffffff;
+}
+#sidebar-nav .nav-link:hover .nav-item-icon {
+    color: #3699FF;
+}
+#sidebar-nav .nav-link i.fa-chevron-left {
+    transition-duration: 0.25s;
+}
+#sidebar-nav .nav-link:not(.collapsed) i.fa-chevron-left {
+    transform: rotate(-90deg);
+}
+#sidebar-nav ul.sidebar-sub-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#sidebar-nav ul.sidebar-sub-nav li a {
+    padding-right: 45px;
+}
+#sidebar-nav .menu-section {
+    margin: 20px 0 0 0;
+    padding: 0 1rem;
+}
+#sidebar-nav .menu-section h5 {
+    color: #4c4e6f;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.sidebar-badge {
+    border-radius: 0.42rem;
+    padding: 2px 7px;
+    font-size: 10px !important;
+}
+.sidebar-blue-badge {
+    background: #3699FF;
+    color: #FFF;
+}
+.sidebar-red-badge {
+    background: #F64E60;
+    color: #FFF;
+}
+
+#user-dropdown {
+    padding: 5px 5px 5px 7px;
+    border-radius: 4px;
+}
+#user-dropdown:hover,
+#user-dropdown.show {
+    background: rgba(77, 89, 149, 0.06);
+}
+#user-dropdown-menu {
+    margin-top: 9px;
+    -webkit-box-shadow: 0px 0px 50px 0px rgb(82 63 105 / 15%);
+    box-shadow: 0px 0px 50px 0px rgb(82 63 105 / 15%);
+    border-radius: 5px;
+}
+#user-dropdown-menu li.user-menu-item:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+#user-dropdown-menu li.user-menu-item i {
+    background: #F3F6F9;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-left: 12px;
+    font-size: 16px;
+}
+.user-menu-item .color-green {
+    color: #1BC5BD;
+}
+.user-menu-item .color-blue {
+    color: #3699FF;
+}
+.user-menu-item .color-red {
+     color: #F64E60;
+ }
+#user-dropdown-menu .user-menu-item-text {
+    font-size: 13px;
+}
+#user-dropdown-menu .user-menu-item-text span:first-child {
+    font-weight: 500;
+    color: #3F4254;
+}
+#user-dropdown-menu .user-menu-item-text span:nth-child(2) {
+    color: #B5B5C3;
+}
+#user-dropdown-menu .user-menu-item a:hover,
+#user-dropdown-menu .user-menu-item a:active,
+#user-dropdown-menu .user-menu-item a:link {
+    background: inherit;
+}
+#user-dropdown-menu .user-menu-item a:hover .user-menu-item-text span:first-child {
+    color: #3699FF;
+}
+#welcome-text {
+    color: #B5B5C3;
+    font-size: 13px;
+}
+#welcome-text span {
+    color: #7E8299;
+    font-weight: 600;
+}
+#user-avatar-substitute {
+    background-color: #C9F7F5;
+    color: #1BC5BD;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+#top-nav li a {
+    font-size: 13px;
+    color: #6c7293;
+    font-weight: 500;
+    border-radius: 4px;
+    transition-duration: 0s;
+}
+#top-nav li:not(:last-of-type) {
+    margin-left: 7px;
+}
+#top-nav li a.active,
+#top-nav li a:hover {
+    background: rgba(77, 89, 149, 0.06);
+    color: #3699FF;
+}
+
+.card-header {
+    font-size: 18px;
+    border-bottom: 1.5px solid;
+    border-bottom-color: #EEF0F8;
+    padding: 15px 20px;
+    color: #181C32;
+}
+
+/************** Accordions ****************/
+.custom-accordion .accordion-item {
+    border: 1px solid #EBEDF3;
+}
+
+.custom-accordion .accordion-button {
+    box-shadow: none;
+    color: #3F4254;
+    background-color: #F3F6F9;
+    font-weight: 500;
+}
+
+.custom-accordion .accordion-button i {
+    font-size: 20px;
+    color: #B5B5C3;
+    width: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.custom-accordion .accordion-button span {
+    font-size: 14px;
+}
+
+.custom-accordion .accordion-button:not(.collapsed),
+.custom-accordion .accordion-button:not(.collapsed) i {
+    color: #3699FF;
+}
+
+/************** Tab ****************/
+.tab-container .nav-tabs:first-of-type {
+    border-bottom: 2px solid #EEF0F8;
+}
+.tab-container .nav-link {
+    color: #7E8299;
+    border: none;
+    margin: 0 30px 0 0 !important;
+    position: relative;
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 500 !important;
+}
+
+.tab-container .nav-link.active {
+    color: #3699FF;
+    background: none;
+    margin: 0;
+}
+.tab-container .nav-link:hover {
+    color: #3699FF;
+}
+.tab-container .nav-link.active:after,
+.tab-container .nav-link:hover:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #3699FF;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.tab-container .tab-pane {
+    padding: 30px;
+}
+
+/************** General ******************/
+.no-duration {
+    transition-duration: 0s;
+}
+/************** Button Styles ***************/
+.btn-style-1 {
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: none !important;
+}
+.btn-light-success {
+    color: #1BC5BD;
+    background-color: #C9F7F5;
+}
+.btn-light-success:hover {
+    color: #ffffff;
+    background-color: #1BC5BD;
+}
+.btn-light-primary {
+    color: #3699FF;
+    background-color: #E1F0FF;
+}
+.btn-light-primary:hover {
+    color: #FFFFFF;
+    background-color: #3699FF;
+}
+.btn-light-danger {
+    color: #F64E60;
+    background-color: #FFE2E5;
+}
+.btn-light-danger:hover {
+    color: #ffffff;
+    background-color: #F64E60;
+}
+.btn-light-warning {
+    color: #FFA800;
+    background-color: #FFF4DE;
+}
+.btn-light-warning:hover {
+    color: #ffffff;
+    background-color: #FFA800;
+}
+.btn-light-dark {
+    color: #181C32;
+    background-color: #D1D3E0;
+}
+.btn-light-dark:hover {
+    color: #ffffff;
+    background-color: #181C32;
+}
+
+/************** Label Styles ***************/
+.label-style-1 {
+    font-size: 12px;
+    padding: 3px 11px;
+    border-radius: 5px;
+    font-weight: 400;
+    user-select: none;
+}
+.label-bold {
+    font-weight: 600;
+}
+.label-light-danger {
+    color: #F64E60;
+    background-color: #FFE2E5;
+}
+.label-light-primary {
+    color: #3699FF;
+    background-color: #E1F0FF;
+}
+.label-light-info {
+    color: #8950FC;
+    background-color: #EEE5FF;
+}
+.label-light-dark {
+    background-color: #EBEDF3;
+    color: #3F4254;
+}
+.label-light-success {
+    color: #1BC5BD;
+    background-color: #C9F7F5;
+}
+.label-light-warning {
+    color: #FFA800;
+    background-color: #FFF4DE;
+}
+
+/************** Form ***************/
+.custom-form {
+    color: #3F4254;
+}
+.custom-form input[type='text'], input[type='email'], input[type='password'] {
+    border: 2px solid #cfcfd9;
+    outline: none;
+}
+
+/************** Floating Label ***************/
+.floating-label-container {
+    position: relative;
+    height: 45px;
+    width: 100%;
+}
+.floating-label-container input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    z-index: 1;
+    outline: none;
+    border-radius: 4px;
+    transition-duration: 0.1s;
+}
+.floating-label-container input::placeholder {
+    color: transparent;
+}
+.floating-label-container label {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 5px;
+    z-index: 0;
+    transition-duration: 0.1s;
+    color: #B5B5C3;
+    pointer-events: none;
+}
+.floating-label-container input:focus {
+    border: 2px solid #3699FF;
+}
+.floating-label-container input:focus + label, .floating-label-container input:not(:placeholder-shown) + label {
+    top: 0;
+    right: 5px;
+}
+.floating-label-container input:focus + label {
+    color: #3699FF;
+}
+
+/************** IOS Button ***************/
+.ios-button {
+    appearance: none;
+    border: none;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background: #e7e7e7;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    user-select: none;
+    /* box-shadow: 0px 0px 5px #9E9E9E; */
+}
+.ios-button::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    top: 3px;
+    right: 3px;
+    transition-duration: 0.2s;
+    box-shadow: 0px 0px 5px #9E9E9E;
+}
+.ios-button:checked::after {
+    right: calc(100% - 24px - 3px);
+    box-shadow: 0px 0px 5px #12467c;
+}
+.ios-button:checked {
+    background: #3699FF;
+}
+
+/************** Table ***************/
+.custom-table thead th {
+    color: #B5B5C3;
+    font-size: 14px;
+    font-weight: bolder;
+    border: none;
+}
+.custom-table thead {
+    border: none;
+}
+.custom-table tr {
+    border-bottom: 1px solid #EBEDF3;
+}
+.custom-table tbody td {
+    font-size: 13px;
+    padding: 16px 8px;
+    color: #3F4254;
+    vertical-align: middle;
+}
+.custom-table .cell-actions i {
+    font-size: 16px;
+    color: #8c8c94;
+    margin-left: 5px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.custom-table .cell-actions i:hover {
+    color: #3699FF;
+    background: #F3F6F9;
+}
