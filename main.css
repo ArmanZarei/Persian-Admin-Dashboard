@@ -99,6 +99,7 @@ main#main-page {
     border-radius: 0.42rem;
     padding: 2px 7px;
     font-size: 10px !important;
+    line-height: 18px;
 }
 .sidebar-blue-badge {
     background: #3699FF;
